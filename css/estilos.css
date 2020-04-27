@@ -70,8 +70,8 @@ div.educacion ul, div.experiencia ul{
 }
 .iconos_a{
 	height: auto;
-	margin: 1.5em 2em;
-	width: 5em;
+	margin: 1.5em 1em;
+	width: 55%;
 }
 .iconos{
 	height: 0.8em;
@@ -125,4 +125,42 @@ textarea {
     border:none;
     margin-top:1.5em;
     cursor:pointer;
+}
+@media only screen and (min-width: 768px){
+	body{
+		width: 100%;
+	}
+
+	.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 26% 25.5% 34% 12.5% 3%;
+  gap: 0% 0%;
+  grid-template-areas: "datos" "educacion" "experiencia" "diplomas" "footer";
+}
+
+.datos { grid-area: datos;}
+
+.educacion { grid-area: educacion; }
+
+.experiencia { grid-area: experiencia; }
+
+.diplomas { grid-area: diplomas; }
+
+.footer { grid-area: footer; }
+.avatar{
+	margin: 1em 33%;
+	width: 35%;
+
+}
+br, .centrado p{
+	display: none;
+}
+h1{
+	text-align: center;
+}
+.iconos_a{
+	width: 15%;
+}
+
 }
