@@ -2,7 +2,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 27.3% 77.7%;
-  grid-template-rows: 43% 39% 16% 2%;
+  grid-template-rows: 46% 36% 15% 2%;
   gap: 0px 0px;
   grid-template-areas: "datos educacion" "datos experiencia" "diplomas diplomas" "footer footer";
 }
